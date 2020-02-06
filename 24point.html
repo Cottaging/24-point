@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="24point.css">
+    <title>速算24点</title>
+</head>
+
+<body>
+
+    <div class="side">
+        <div>
+            <button id="leap" onclick="rules()">Rules</button>
+        </div>
+        <div>
+            <button id="hint" onclick="hint()">Hint</button>
+        </div>
+    </div>
+
+    <div class="hintdiv">
+        <p id="answer"></p>
+    </div>
+    <div class="main">
+        <div class="InputArea">
+            <div id="ini01"><button class="num" id="ini1" onclick="appContentonce0(this)"></button></div>
+            <div id="ini02"><button class="num" id="ini2" onclick="appContentonce1(this)"></button></div>
+            <div id="ini03"><button class="num" id="ini3" onclick="appContentonce2(this)"></button></div>
+            <div id="ini04"><button class="num" id="ini4" onclick="appContentonce3(this)"></button></div>
+            <div id="op01"><button class="operator" id="op1" onclick="appContent(this)">+</button></div>
+            <div id="op02"><button class="operator" id="op2" onclick="appContent(this)">-</button></div>
+            <div id="op03"><button class="operator" id="op3" onclick="appContent(this)">*</button></div>
+            <div id="op04"><button class="operator" id="op4" onclick="appContent(this)">/</button></div>
+            <div id="op05"><button class="operator" id="op5" onclick="appContent(this)">(</button></div>
+            <div id="op06"><button class="operator" id="op6" onclick="appContent(this)">)</button></div>
+            <div id="op07"><button class="operator" id="op7" onclick="appContent(this)">C</button></div>
+            <div id="op08"><button class="operator" id="op8" onclick="appContent(this)">=</button></div>
+        </div>
+        <div class="OutputArea">
+            <div><button class="line1" id="formula" disabled=true></button></div>
+        </div>
+    </div>
+    <script src=24point1.js></script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+body {
+    background: #454545;
+    color: #eee;
+    line-height: 1.7;
+}
+
+.side {
+    width: 15%;
+    height: 60%;
+    background: #454545;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    margin-left: 160px;
+}
+
+.side>* {
+    padding: 30px;
+}
+
+.hintdiv {
+    width: 23%;
+    height: 55%;
+    background: #454545;
+    position: absolute;
+    bottom: 25px;
+    margin-left: 350px;
+    border-style: solid;
+    padding-left: 50px;
+}
+
+.main {
+    width: 35%;
+    height: 60%;
+    background: #454545;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    margin-right: 200px;
+}
+
+.InputArea {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "ini1 ini2 ini3 ini4" "op1 op2 op3 op4" "op5 op6 op7 op8";
+    justify-items: center;
+}
+
+#ini01 {
+    grid-area: ini1;
+}
+
+#ini02 {
+    grid-area: ini2;
+}
+
+#ini03 {
+    grid-area: ini3;
+}
+
+#ini04 {
+    grid-area: ini4;
+}
+
+#op01 {
+    grid-area: op1;
+}
+
+#op02 {
+    grid-area: op2;
+}
+
+#op03 {
+    grid-area: op3;
+}
+
+#op04 {
+    grid-area: op4;
+}
+
+#op05 {
+    grid-area: op5;
+}
+
+#op06 {
+    grid-area: op6;
+}
+
+#op07 {
+    grid-area: op7;
+}
+
+#op08 {
+    grid-area: op8;
+}
+
+.OutputArea {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+button {
+    display: inline-block;
+    background: #444;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #333;
+    border-radius: 5px;
+    margin: 20px;
+    position: relative;
+    border: 1px solid #333;
+    box-shadow: inset 0px 1px 2px #8b8b8b, inset 0px -1px 0px #3d3d3d, inset 0px -2px 3px #8b8b8b;
+}
+
+button:hover {
+    display: inline-block;
+    background: #666;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #333;
+    border-radius: 5px;
+    margin: 20px;
+    position: relative;
+    border: 1px solid #333;
+    box-shadow: inset 0px 1px 2px #8b8b8b, inset 0px -1px 0px #3d3d3d, inset 0px -2px 3px #8b8b8b;
+    transition: 500ms;
+}
+
+button:disabled {
+    display: inline-block;
+    background: #fff;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-shadow: 1px 1px 1px #333;
+    border-radius: 5px;
+    margin: 20px;
+    position: relative;
+    border: 1px solid #333;
+    box-shadow: inset 0px 1px 2px #8b8b8b, inset 0px -1px 0px #3d3d3d, inset 0px -2px 3px #8b8b8b;
+}
+
+#formula {
+    width: 520px;
+    color: black;
+}
